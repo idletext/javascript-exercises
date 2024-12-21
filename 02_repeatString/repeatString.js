@@ -4,9 +4,15 @@ const repeatString = function(string, num) {
 // as counter
 // Condition if init = 4 stop looping
 //
-    for (let i = 0; i < (num + 1); i++) {
-        return (string);
-    }
+
+    let repeatedString = "";
+
+    for (; num > 0; num--) {
+
+        repeatedString += string;
+    };
+
+    return repeatedString;
 };  
 
 repeatString('hey', 3);
