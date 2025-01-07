@@ -3,7 +3,6 @@ const repeatString = function(string, num) {
 // initializer is calls the function and serves
 // as counter
 // Condition if init = 4 stop looping
-//
 
     let repeatedString = "";
 
