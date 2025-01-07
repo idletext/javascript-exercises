@@ -1,17 +1,14 @@
 const repeatString = function(string, num) {
-// hey*3
-// initializer is calls the function and serves
-// as counter
-// Condition if init = 4 stop looping
+    if (num < 0) return "ERROR";
 
-    let repeatedString = "";
+    let InsideString = "";
 
     for (; num > 0; num--) {
 
-        repeatedString += string;
+        InsideString += string;
     };
 
-    return repeatedString;
+    return InsideString;
 };  
 
 repeatString('hey', 3);
