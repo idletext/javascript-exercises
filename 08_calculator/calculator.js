@@ -1,5 +1,5 @@
-const add = function(sum) {
-
+const add = function(...add) {
+  
 };
 
 const subtract = function() {
@@ -10,8 +10,8 @@ const sum = function(sum) {
   return sum.reduce( (som, current) => som + current, 0 );
 };
 
-const multiply = function() {
-
+const multiply = function(multi) {
+  return multi.reduce( (multiply, current) => multiply * current );
 };
 
 const power = function() {
