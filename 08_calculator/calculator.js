@@ -14,7 +14,8 @@ const multiply = function(multi) {
   return multi.reduce( (multiply, current) => multiply * current );
 };
 
-const power = function() {
+const power = function(...power) {
+  return power.reduce( (array, current) => array ** current);
 	
 };
 
