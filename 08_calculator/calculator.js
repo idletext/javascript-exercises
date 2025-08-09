@@ -16,11 +16,14 @@ const multiply = function(multi) {
 
 const power = function(...power) {
   return power.reduce( (array, current) => array ** current);
-	
 };
 
-const factorial = function() {
-	
+const factorial = function(fact) {
+  let res = 1;
+  for (let i = 1; i <= fact; i++) {
+    res*= i;
+  };
+  return res;
 };
 
 // Do not edit below this line
