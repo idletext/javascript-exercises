@@ -1,14 +1,11 @@
 const findTheOldest = function(human) {
-    // let arrAge = [];
 
-    let arrAge = human.map(user => ({
-        name: `${user.name}`,
-        age: `${user.yearOfDeath - user.yearOfBirth}`
-    }));
+    let getOldest = human.reduce((obj, value) => {
 
-    let getOldest = arrAge.reduce((obj, value) => {
-
-        if (obj.age < value.age){
+        if (  
+            (obj['yearOfDeath'] - obj['yearOfBirth']) 
+            < (value['yearOfDeath'] - value['yearOfBirth'])
+        ){
             return obj = value; 
         } else {
             return obj;
@@ -16,7 +13,7 @@ const findTheOldest = function(human) {
 
     });
 
-    return(getOldest['name']);
+    return(getOldest);
 };
 
 // Do not edit below this line
